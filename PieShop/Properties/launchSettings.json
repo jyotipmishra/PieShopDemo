@@ -10,7 +10,7 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchUrl": "https://localhost:5001/pie/listofpie",
+      "launchUrl": "pie/listofpie",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -20,7 +20,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:5001/pie/listofpie;http://localhost:5000/pie/listofpie",
-      "launchUrl": "https://localhost:5001/pie/listofpie",
+      "launchUrl": "pie/listofpie",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
