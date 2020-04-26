@@ -1,13 +1,8 @@
 namespace PieShop
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Threading.Tasks;
+	using System.IO;
 	using Microsoft.AspNetCore.Hosting;
-	using Microsoft.Extensions.Configuration;
 	using Microsoft.Extensions.Hosting;
-	using Microsoft.Extensions.Logging;
 
 	public class Program
 	{
@@ -20,7 +15,10 @@ namespace PieShop
 			Host.CreateDefaultBuilder(args)
 				.ConfigureWebHostDefaults(webBuilder =>
 				{
+					webBuilder.UseKestrel();
+					webBuilder.UseContentRoot(Directory.GetCurrentDirectory());
 					webBuilder.UseStartup<Startup>();
+					webBuilder.UseIISIntegration();
 				});
 	}
 }
