@@ -15,7 +15,6 @@ namespace PieShop
 			Host.CreateDefaultBuilder(args)
 				.ConfigureWebHostDefaults(webBuilder =>
 				{
-					webBuilder.UseKestrel();
 					webBuilder.UseContentRoot(Directory.GetCurrentDirectory());
 					webBuilder.UseStartup<Startup>();
 					webBuilder.UseIISIntegration();
